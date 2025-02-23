@@ -122,3 +122,47 @@ section h2 {
         font-size: 2em;
     }
 }
+
+/* Tabs Styling */
+.tabs {
+    display: flex;
+    justify-content: center;
+    background-color: #1e1e1e;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.tab-link {
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+.tab-link:hover {
+    color: #ffcc00;
+}
+
+.tab-link.active {
+    border-bottom: 3px solid #ffcc00;
+}
+
+/* Tab Content */
+.tab-content {
+    display: none;
+    padding: 20px;
+    background: #121212;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+}
+
+/* Show Active Tab */
+.tab-content.active {
+    display: block;
+}
