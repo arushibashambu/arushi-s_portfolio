@@ -20,12 +20,23 @@
         </div>
     </header>
 
-    <section id="about">
+    <!-- Tabs Navigation -->
+    <div class="tabs">
+        <button class="tab-link active" onclick="openTab(event, 'intro')">Intro</button>
+        <button class="tab-link" onclick="openTab(event, 'education')">Education</button>
+        <button class="tab-link" onclick="openTab(event, 'skills')">Skills</button>
+        <button class="tab-link" onclick="openTab(event, 'experience')">Experience</button>
+        <button class="tab-link" onclick="openTab(event, 'projects')">Projects</button>
+        <button class="tab-link" onclick="openTab(event, 'contact')">Contact</button>
+    </div>
+
+    <!-- Tab Content -->
+    <div id="intro" class="tab-content active">
         <h2>About Me</h2>
         <p>Computer Engineering student at Thapar Institute of Engineering and Technology, passionate about Machine Learning, AI, and Software Development.</p>
-    </section>
+    </div>
 
-    <section id="education">
+    <div id="education" class="tab-content">
         <h2>Education</h2>
         <ul>
             <li><strong>Thapar Institute of Engineering and Technology</strong> (2021 – 2025)  
@@ -35,9 +46,9 @@
             <li><strong>Delhi Public School, Rohini</strong> (2018 – 2019)  
                 <br> Class 10 CBSE | Percentage: 93%</li>
         </ul>
-    </section>
+    </div>
 
-    <section id="skills">
+    <div id="skills" class="tab-content">
         <h2>Technical Skills</h2>
         <ul>
             <li><strong>Programming:</strong> C, C++, Python, R, SQL, HTML</li>
@@ -45,61 +56,23 @@
             <li><strong>Tools & Version Control:</strong> Git, GitHub, Beautiful Soup, VS Code, Google Colab, AWS, Azure</li>
             <li><strong>CS Fundamentals:</strong> Data Structures, Algorithms, OOP, AI, DBMS, OS, ML, NLP, Deep Learning</li>
         </ul>
-    </section>
+    </div>
 
-    <section id="experience">
+    <div id="experience" class="tab-content">
         <h2>Experience</h2>
-        <div class="job">
-            <h3>IIIT Delhi | Summer Intern</h3>
-            <p><strong>Grading App</strong></p>
-            <ul>
-                <li>Collaborated with PhD researchers to develop a grading system for 10,000+ Stack Overflow questions.</li>
-                <li>Developed a Flask backend and React Native frontend for a seamless cross-platform experience.</li>
-                <li>Processed data using Python and structured JSON files for efficient evaluation.</li>
-            </ul>
-        </div>
+        <p>Details about internships at IIIT Delhi & DRDO.</p>
+    </div>
 
-        <div class="job">
-            <h3>DRDO, Metcalfe Delhi (Govt.) | Summer Intern</h3>
-            <p><strong>Research on Adversarial Attacks</strong></p>
-            <ul>
-                <li>Analyzed adversarial attack techniques (FGSM) on 100+ neural network models.</li>
-                <li>Worked with text and audio datasets to simulate adversarial conditions.</li>
-                <li>Proposed secure decoding mechanisms for military communication, improving resistance by 30%.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="projects">
+    <div id="projects" class="tab-content">
         <h2>Projects</h2>
-        <div class="project">
-            <h3>Smart Parking System</h3>
-            <p>YOLO V8-based vehicle detection system with license plate recognition, real-time alerts, and a web-based admin module.</p>
-            <a href="https://github.com/anrao0037/smart-parking" target="_blank">View on GitHub</a>
-        </div>
+        <p>Details about Smart Parking System & Caption Generator.</p>
+    </div>
 
-        <div class="project">
-            <h3>Caption Generator</h3>
-            <p>Developed an AI model using CNNs & RNNs for image captioning, improving inference time by 15%.</p>
-            <a href="https://github.com/anrao0037/caption-generator" target="_blank">View on GitHub</a>
-        </div>
-    </section>
-
-    <section id="achievements">
-        <h2>Achievements</h2>
-        <ul>
-            <li>Kaggle Notebook Expert</li>
-            <li>Top 5% in ADOBE GENSOLVE 2024</li>
-            <li>Completed Data Science & Programming Course from IIT Madras</li>
-            <li>Earned 20+ certifications on Coursera</li>
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
+    <div id="contact" class="tab-content">
+        <h2>Contact</h2>
         <p>Email: <a href="mailto:arushibashambu@gmail.com">arushibashambu@gmail.com</a></p>
-    </section>
-<script src="script.js"></script>
+    </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
